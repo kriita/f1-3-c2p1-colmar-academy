@@ -1,0 +1,625 @@
+/* I couldn't figure out what was wrong with the "Computer art"
+box in start learning, so that part of the page looks a bit weird.
+However, due to lack of time I had to turn it in as it is. */
+
+/* Import Ubuntu font */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700');
+
+/* Import Lato font */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800');
+
+/* General ruling */
+
+html {
+  color: hsl(0, 0%, 30%);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4em;
+}
+
+section {
+  box-sizing: border-box;
+  display: flex block;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+  width: (100% - 2rem);
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+}
+
+header img {
+  display: none;
+  height: 2rem;
+  margin-top: 0.4rem;
+  overflow: hidden;
+  width: auto;
+}
+
+header nav span {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  height: 2rem;
+}
+
+.logo img {
+  display: inline-block;
+  height: 3rem;
+}
+
+.logo span {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4em;
+}
+
+#colmar {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+}
+
+#academy {
+  color: lightgrey;
+  display: inline-block;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Banner */
+
+.banner {
+  align-items: center;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 1.5rem;
+}
+
+.banner img {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner .content {
+  display: inline-block;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.banner h1 {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.4em;
+}
+
+.banner h3 {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin: 0.75em 0;
+}
+
+.banner .content .button {
+  box-sizing: border-box;
+  color: white;
+  background-color: hsl(0, 0%, 30%);
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem 0;
+  margin: 0.75em 0;
+}
+
+.banner .content .button span {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.banner .content .button:hover {
+  background-color: grey;
+}
+
+/* Headline */
+
+.information {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.information .main {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.information .main img {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.information h1 {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 1.5rem;
+}
+
+.information p {
+  color: grey;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.information span {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.stories {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex inline-block;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 40%;
+}
+
+.stories .story {
+  align-items: center;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.stories .story:first-child {
+  border-top: none;
+}
+
+.stories .story:last-child {
+  border-bottom: none;
+}
+
+.stories .story img {
+  display: inline-block;
+  margin: 1rem;
+  height: auto;
+  width: 35%;
+}
+
+.stories .story .mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.stories .story .content {
+  display: flex inline-block;
+  flex-direction: column;
+  width: 65%;
+}
+
+.stories .story h3 {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding: 0.25rem;
+}
+
+.stories .story p {
+  box-sizing: border-box;
+  color: grey;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: 0.25rem;
+}
+
+.stories .story a {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.story:hover {
+  background-color: lightgrey;
+}
+
+/* Start Learning */
+
+.learning {
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.learning h1 {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 1rem;
+  text-align: center;
+}
+
+.learning-grid {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.learning-box {
+  background-color: white;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 1rem;
+  width: 30%;
+}
+
+.learning-box img {
+  width: 100%;
+  height: auto;
+}
+
+.learning-box .content {
+  padding: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.learning-box .content h3 {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.learning-box .content p {
+  box-sizing: border-box;
+  color: hsl(0, 0%, 60%);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-top: 0.5rem;
+}
+
+.learning-box .c-art {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Thesis exhibit */
+
+.thesis {
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  border-bottom: 1px solid lightgrey;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
+
+.thesis h1 {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding: 2rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.thesis .thesis-exhibit {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  flex-direction: row;
+}
+
+.thesis .main {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.thesis .main video {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.thesis h3 {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  padding: 0.5rem 0;
+}
+
+.thesis p {
+  box-sizing: border-box;
+  color: grey;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.thesis .stories {
+  padding-top: 2rem;
+}
+
+.thesis .story {
+  border: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: hsl(0, 0%, 95%);
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 4rem 1.5rem;
+}
+
+footer div {
+  display: inline-block;
+}
+
+footer span {
+  margin-left: 0.5rem;
+}
+
+/* -- Mobile -- */
+
+@media only screen and (max-width: 568px) {
+
+  /* General ruling */
+
+  html {
+    font-size: 16px;
+  }
+
+  /* Header */
+
+  #colmar,
+  #academy {
+    display: none;
+  }
+
+  header img {
+    display: inline-block;
+  }
+
+  .logo img {
+    height: 2.5rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  /* Banner */
+
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner h1 {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner h3 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .banner img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner .content .button {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  /* Headline */
+
+  .information {
+    flex-direction: column;
+  }
+
+  .information .main {
+    display: none;
+  }
+
+  .information .stories {
+    padding: 0;
+    width: 100%;
+  }
+
+  .information .stories .story {
+    align-items: flex-start;
+    border: none;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .information .stories .story img {
+    display: none;
+    margin: 0;
+  }
+
+  .information .stories .story .mobile {
+    display: inline-block;
+  }
+
+  .information .stories .story .content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .information .stories .story h3 {
+  }
+
+  .information .stories .story p {
+    padding: 0;
+  }
+
+  .information .stories .story p,
+  .information .stories .story h3 {
+    padding: 0;
+  }
+
+  /* Start learning */
+
+  .learning {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 90%);
+    padding: 2rem 1rem;
+  }
+
+  .learning h1 {
+    margin: 0;
+  }
+
+  .learning-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1rem;
+  }
+
+  .learning-box {
+    background-color: hsl(0, 0%, 85%);
+    margin: 0.25rem 0;
+    width: 100%;
+  }
+
+  .learning-box:last-child {
+    margin:bottom: 0;
+  }
+
+  .learning-box img {
+    display: none;
+  }
+
+  .learning-box .content {
+    padding: 0;
+  }
+
+  .learning-box .content h3 {
+    font-weight: 600;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .learning-box .content p {
+    display: none;
+  }
+
+  /* Thesis exhibit */
+
+  .thesis {
+    border: none;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .thesis h1 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .thesis .thesis-exhibit {
+    padding: 0;
+  }
+
+  .thesis .main {
+    margin: 0;
+    width: 100%;
+  }
+
+  .thesis .main video {
+    padding: 0;
+  }
+
+  .thesis h3 {
+    display: none;
+    padding: 0;
+  }
+
+  .thesis p {
+    display: none;
+  }
+
+  .thesis .stories {
+    display: none;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 1rem;
+  }
+
+  footer .terms-privacy {
+    display: none;
+  }
+}
